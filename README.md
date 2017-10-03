@@ -10,7 +10,7 @@ git clone https://github.com/bradrisse/movie-list.git
 ## Add Axios and Axios Middleware
 
 ```
-yarn add axios axios-middleware
+yarn add axios redux-axios-middleware
 ```
 
 ## Import
