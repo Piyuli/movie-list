@@ -27,3 +27,5 @@ yarn-error.log*
 .idea/movie-list.iml
 
 .idea/workspace.xml
+
+.idea/vcs.xml

@@ -1,14 +1,20 @@
-#Movie List
+## Movie List
 - A simple movie list app used to show how to use axios-middleware
 
-#Add Axios Middleware
+## Add Axios and Axios Middleware
+
+```
+yarn add axios axios-middleware
+```
+
+## Import
 
 ```
 import axios from 'axios'
 import axiosMiddleware from 'redux-axios-middleware
 ```
 
-#Add Client
+## Add Client
 ```
 const client = axios.create({ //all axios can be used, shown in axios documentation
     baseURL:'https://api.themoviedb.org/3/movie/',
@@ -16,7 +22,7 @@ const client = axios.create({ //all axios can be used, shown in axios documentat
 });
 ```
 
-#Apply Middleware
+## Apply Middleware
 
 Change Store
 
@@ -30,7 +36,7 @@ to
 store = createStore(reducers, {}, applyMiddleware(axiosMiddleware(client)))
 ```
 
-#Add ComponentWillMount
+## Add ComponentWillMount
 ```
 componentWillMount() {
       this.props.movieActions.fetchMovies('top_rated') //upcoming, popular, top_rated, now_playing
