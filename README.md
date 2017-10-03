@@ -16,7 +16,7 @@ yarn add axios redux-axios-middleware
 
 ## Import
 
-- add these to top of index.js
+- add these to top of src/index.js
 
 ```
 import axios from 'axios'
@@ -36,7 +36,7 @@ const client = axios.create({ //all axios can be used, shown in axios documentat
 
 ## Apply Middleware
 
-- modify this in index.js
+- modify this in src/index.js
 
 Change Store
 
@@ -52,7 +52,7 @@ store = createStore(reducers, {}, applyMiddleware(axiosMiddleware(client)))
 
 ## Add ComponentWillMount
 
-add this inside App.js component, above return
+add this inside src/App.js component, above render
 
 ```
 componentWillMount() {
