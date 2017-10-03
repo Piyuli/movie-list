@@ -1,6 +1,12 @@
 ## Movie List
 - A simple movie list app used to show how to use axios-middleware
 
+## Clone Repository
+
+```
+git clone https://github.com/bradrisse/movie-list.git
+```
+
 ## Add Axios and Axios Middleware
 
 ```
