@@ -20,7 +20,7 @@ yarn add axios redux-axios-middleware
 
 ```
 import axios from 'axios'
-import axiosMiddleware from 'redux-axios-middleware
+import axiosMiddleware from 'redux-axios-middleware'
 ```
 
 ## Add Client
@@ -58,4 +58,17 @@ add this inside App.js component, above return
 componentWillMount() {
       this.props.movieActions.fetchMovies('top_rated') //upcoming, popular, top_rated, now_playing
   }
+```
+
+## Add TMDB API Key
+-- add this to /reducers/movies inside fetchMovies action
+
+```
+api_key: 'YOUR_API_KEY_HERE',
+```
+
+## Start App
+
+```
+yarn start
 ```
