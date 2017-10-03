@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+.movieList {
+  padding: 15px;
+}
+
+.movie-card {
+  margin-bottom: 30px;
+}
+
+.movie-content {
+  padding: 10px;
+}
